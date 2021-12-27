@@ -1,4 +1,4 @@
-# Memor Game
+# Memory Game
 
 Memory game in java / swing
 The game goes as following:
