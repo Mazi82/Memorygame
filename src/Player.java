@@ -1,44 +1,22 @@
+import java.util.Random;
 
-public class Player {
-
-    private String playerName;
-    private int score;
-    private boolean active;
-
-    //Player info
-    public Player(String playerName) {
-        this.playerName = playerName;
-        this.score = 0;
-        this.active = false;
+public class Player{
+    Random random = new Random();
+    boolean player1_turn = true;
+    public  Player(){
     }
 
-    //Player 1 eller Player 2
-    public String GetPLayerName() {
-        return playerName;
-    }
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
+    public boolean isPlayer1_turn() {
+        if (random.nextInt(2) == 0){
+            player1_turn = true;
         }
-
-    //Poängställning
-    public int getScore() {
-        return score;
-    }
-    public void setScore(int score) {
-        this.score = score;
+        else {
+            player1_turn = false;
+        }
+        return player1_turn;
     }
 
-    //Aktiv eller Inaktiv
-    public boolean getActive() {
-        return active;
+    public void setPlayer1_turn(boolean player1_turn) {
+        this.player1_turn = player1_turn;
     }
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
-
-    public String getPlayerName() {
-        return playerName;
-    }
-
 }
