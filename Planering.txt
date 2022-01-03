@@ -1,0 +1,20 @@
+1. UML-diagram 
+    1. Rita upp på ett grafiskt vis hur programmet ska fungera efter input samt 
+    2. Visa hur de olika klasserna interagerar med varandra 
+2. Boardview 
+    1. Visa hur det grafiska gränssnittet ser ut med spelplan, spelare och poäng
+    2. Markera den aktive spelaren för att visa vems tur det är (hanterat i Player)
+    3. Placera ut korten på spelplanen, med baksida och framsida (hanterat i Card/Visibility?)
+    4. Visa hur mycket poäng varje spelare har (hanterat i Player)
+3. Card 
+    1. Hanterar vilken bild som kortet ska visa, samt vilken status den har (Visibility enum? VISIBLE, INVISIBLE; ELIMINATED)
+4. Player
+    1. Sparar och visar namn på spelarna som string-värde
+    2. Visar vilken spelare som är aktiv grafiskt så man vet vems tur det är genom boolean-värde
+    3. Håller koll på hur många poäng respektive spelare har genom int-värde 
+5. Game
+    1. Huvudprogrammet som har main-metoden
+    2. Börja spelet med två spelare 
+    2. Hanterar spellogiken såsom vems tur det är, vilka kort som finns, samt kontrollerar Boardview
+    3. Avsluta spelet när alla par är funna 
+    
