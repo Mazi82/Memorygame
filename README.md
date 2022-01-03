@@ -1,4 +1,4 @@
-                                                     # Memory Game
+                                                  # Memory Game
 
 Memory game in java SWING
 The game goes as following:
