@@ -85,7 +85,7 @@ public class BoardView  extends javax.swing.JFrame implements ActionListener{
         btnPlay1.setBounds(2, 0, 160, 300);
         btnPlay1.setFont(new Font("MV Boli", Font.BOLD, 35));
         btnPlay1.setForeground(new Color(0, 0, 0, 253));
-        //btnPlay1.setOpaque(true);
+        btnPlay1.setOpaque(false);
         btnPlay1.setFocusable(false);
         btnPlay1.setText(String.valueOf(score1));
         btnPlay1.setToolTipText("Score for Player one");
@@ -105,7 +105,7 @@ public class BoardView  extends javax.swing.JFrame implements ActionListener{
         btnPlay2.setBounds(2, 300, 160, 300);
         btnPlay2.setFont(new Font("MV Boli", Font.BOLD, 35));
         btnPlay2.setForeground(new Color(0, 0, 0, 253));
-        //tnPlay2.setOpaque(true);
+        btnPlay2.setOpaque(false);
         btnPlay2.setFocusable(false);
         btnPlay2.setText(String.valueOf(score1));
         btnPlay2.setToolTipText("Score for Player two");
